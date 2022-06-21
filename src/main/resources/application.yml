@@ -1,0 +1,18 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: user-service
+  flyway:
+    enabled: true
+    schemas: ateupeonding_user_flyway
+    user: postgres
+    password: postgres
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/ateupeonding
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/ateupeonding
+server:
+  port: 9004
